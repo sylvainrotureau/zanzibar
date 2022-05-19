@@ -1,0 +1,132 @@
+/*********************** RESPONSIVE ******************************/
+
+@media screen and (max-width: 767px) {
+    nav {
+      justify-content: center;
+      flex-wrap: wrap;
+      height: 23vh;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      margin-left: 30px;
+    }
+  
+    nav ul li {
+      padding: 5px;
+    }
+  
+    .home-title {
+      top: 50%;
+      left: 10%;
+    }
+  
+    #qui-singe {
+      position: absolute;
+      max-width: 100%;
+      opacity: 50%;
+      z-index: -1;
+    }
+  
+    #qui-texts {
+      max-width: 100%;
+    }
+  
+    .photos-lignes {
+      flex-direction: column;
+      padding: 0px;
+    }
+  
+    #photos-ligne1-gauche {
+      width: 100%;
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  
+    #photos-ligne1-droite {
+      width: 100%;
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  
+    #photos-ligne2-gauche {
+      width: 100%;
+      padding-right: 0;
+      padding-left: 0px;
+    }
+  
+    #photos-ligne2-milieu {
+      width: 100%;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    #photos-ligne2-droite {
+      width: 100%;
+      padding-right: 0;
+      padding-left: 0;
+    }
+  
+    iframe {
+      width: 90vw;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .sejours {
+      flex-direction: column;
+      margin: 0 auto;
+    }
+  
+    .container {
+      margin: 0 40px;
+    }
+  
+    .notre-ile-lieu {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+  
+    .temoignages {
+      flex-direction: column;
+      padding: 0px;
+    }
+  
+    .temoignages-clients {
+      width: 60%;
+      padding: 0px;
+      margin: 0 auto;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .contact-infos {
+      flex-direction: column;
+    }
+  
+    .contact-largeur {
+      width: 100%;
+      padding-right: 0px;
+      padding-left: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-form {
+      width: 100%;
+      padding: 0px;
+      flex-direction: column;
+    }
+  
+    .contact-form1 {
+      padding-left: 0px;
+      margin-bottom: 30px;
+    }
+  
+    .champs {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 0px;
+      margin-top: 20px;
+    }
+  }

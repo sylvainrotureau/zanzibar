@@ -1,85 +1,59 @@
-/*
-Author : Sylvain Rotureau
-Date : 10/05/2022
-Version : 1
-*/
-
-
-// IMPORT
-@import url(../font/font.css);
-
 // GLOBAL
-* {
-    font-family: 'Roboto', sans-serif;
-    border: 1px solid black;
+@import url(./_responsive.css);
+
+html {
+    background-color: #fff;
+    font-family: "Lato", "Arial", sans-serif;
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        font-weight: 300;
+        word-spacing: 8px;
+    }
 
     h1 {
-        font-size: 3.2rem;
+        color: #eee;
     }
 
     h2 {
-        display: flex;
-        flex-direction: column;
-        font-size: 40px;
-        padding: 3%;
-        display: inline-block;
+        color: #333333;
+        font-size: 250%;
         text-align: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
     }
 
     h2:after {
-        content: ' ';
         display: block;
-        border-bottom: 4px solid aqua;
-        width: 40%;
-        margin: auto;
+        height: 2px;
+        background-color: #05cdfe;
+        width: 100px;
+        content: " ";
+        margin: 0 auto;
+        margin-top: 10px;
     }
-}
 
-body {
-    font-family: 'Roboto', sans-serif;
-    width: 100vw;
-    text-align: center;
+    h3 {
+        font-size: 160%;
+    }
+
+    p {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+
+    section {
+        padding: 30px 0 60px 0;
+    }
+
 
     // HEADER
     header {
-        z-index: 10;
-        display: flex;
-        background-color: black;
-        color: white;
-        align-items: center;
-        justify-content: space-around;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
-        #logo {
-            font-family: 'warnesregular';
-            font-size: 2rem;
-        }
-
-        nav {
-            ul {
-                display: flex;
-
-                li {
-                    list-style: none;
-                    font-size: 20px;
-                    margin: 15px;
-                }
-            }
-        }
-    }
-
-    // BANNER
-    .banner {
-        position: relative;
-        text-align: left;
-        color: white;
         background-image: linear-gradient(rgba(0, 242, 96, 0.4),
                 rgba(7, 117, 230, 0.3)),
             url(../images/header.jpg);
@@ -87,477 +61,464 @@ body {
         background-position: center;
         background-size: cover;
 
-        h1 {
-            font-weight: bold;
-        }
-
-        // div
-        #title {
-            position: absolute;
-            top: 20vh;
-            left: 20vh;
-
-            // span
-            #subtitle {
-                font-size: 2.5em;
-                font-weight: lighter;
-                letter-spacing: .2rem;
-            }
-        }
-
-        // buttons
-        a {
-            background-color: white;
-            border-radius: 12px;
-            border: none;
-            color: aqua;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-        }
-
-        #buttonContactUs {
-            background-color: transparent;
-            border: 2px solid white;
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
             color: white;
-        }
-    }
+            height: 50px;
+            z-index: 1;
 
-    // ABOUT
-    #about {
-        #content {
-            display: flex;
-
-            // monkey
-            #monkey {
-                min-width: 60%;
-
-                img {
-                    width: 100%;
-                }
-            }
-
-            // right side
-            #rightSide {
-                .row {
-                    text-align: left;
-                    padding-left: 20px;
-                    display: flex;
-                    padding-bottom: 20px;
-
-                    .icon {
-                        padding-right: 20px;
-
-                        i {
-                            background-color: white;
-                            border-radius: 50%;
-                            color: red;
-                            border: 2px solid red;
-                            padding: 10px;
-                        }
-                    }
-
-                    .text {
-                        h3 {
-                            padding: 0%;
-                            text-align: left;
-                            font-size: 1.8rem;
-                        }
-                    }
-
-                }
-            }
-        }
-    }
-
-    // OURISLAND
-    #ourIsland {
-        padding: 50px;
-        background-color: aqua;
-
-        // main slide
-        #slide {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-
-            .card {
-                width: 40%;
-                background-color: white;
-                border-radius: 20px;
+            ul {
                 display: flex;
-                flex-direction: column;
-                align-items: center;
-                box-shadow: 0 0 5px 0 grey;
-                padding-bottom: 50px;
+                flex-direction: row;
 
-                img {
+                li {
+                    list-style-type: none;
+                    padding: 15px;
+                }
+            }
 
-                    width: 70%;
+            a {
+                color: white;
+                text-decoration: none;
+            }
+
+            #zanzibar {
+                font-family: "warnesregular";
+                font-size: 30px;
+                margin-left: 1.3em;
+            }
+        }
+
+        .fixed-top {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            background-color: #000 !important;
+        }
+
+        // CONTAINER
+        .home-title {
+            position: absolute;
+            top: 30%;
+            left: 12.3em;
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-size: 340%;
+                color: #fff;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+
+            p {
+                color: #fff;
+            }
+
+            .btn {
+                display: inline-flex;
+                text-decoration: none;
+                border-radius: 10px;
+                transition: background-color 1s, color 1s, border 1s;
+                margin-bottom: 20px;
+            }
+
+            .btn {
+                display: inline-block;
+                padding: 10px 30px;
+                text-decoration: none;
+                border-radius: 10px;
+                transition: background-color 1s, color 1s, border 1s;
+            }
+
+            .btn-full {
+                background-color: azure;
+                color: #04a8d1;
+                margin-right: 15px;
+            }
+
+            .btn-ghost {
+                border: 1px solid #fff;
+                color: #fff;
+            }
+
+            .btn-full:hover {
+                background-color: #04a8d1;
+                color: #fff;
+            }
+
+            .btn-ghost:hover {
+                background-color: #04a8d1;
+                border: 1px solid #5ee077;
+                color: #fff;
+            }
+        }
+    }
+
+    // WHO ARE WE
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 160px;
+
+        #contenu-qui {
+            display: flex;
+            flex-direction: row;
+
+            #qui-singe {
+                max-width: 40%;
+            }
+
+            #qui-texts {
+                max-width: 40%;
+
+                .qui-texts-plus {
+                    margin: 20px 0;
+                    display: flex;
+
+                    .qui-texts-icon {
+                        font-size: 34px;
+                        color: #da2c13;
+                        transition: all 1s;
+                    }
+
                 }
 
-                h3 {
-                    text-align: left;
-                    font-size: 1.5rem;
-                }
 
-                p {
-                    padding: 0 50px;
-                    text-align: left;
+            }
+        }
+    }
+
+    // OUR ISLAND
+    #notre-ile {
+        background-color: #0ce0f5;
+
+        .container {
+            .notre-ile-lieux {
+                display: flex;
+                flex-flow: row wrap;
+
+                .notre-ile-lieu {
+                    max-width: 30.333333%;
+                    padding: 0 15px;
+
+                    .lieu-details {
+                        background-color: #fff;
+                        padding: 30px 30px;
+                        border-radius: 10px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                        margin-bottom: 20px;
+
+                        img {
+                            display: block;
+                            margin: 0 auto;
+                            width: 90%;
+                        }
+
+                        h4 {
+                            text-align: center;
+                            margin-bottom: 15px;
+                        }
+                    }
                 }
             }
         }
     }
 
-    // GALERIE
-    #galerie {
-        padding: 50px;
+    // GALLERY
+    #photos {
+        .container {
+            .photos-lignes {
+                display: flex;
+                padding: 0 15px;
 
-        #row1 {
-            display: flex;
-            gap: 1.7rem;
-            justify-content: center;
-            margin-bottom: 20px;
+                #photos-ligne1-gauche {
+                    width: 34%;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
 
-            #image1 {
-                background-image: url(../images/galerie/femmes-zanzibar.jpg);
-                background-size: cover;
-                width: 30%;
-                border-radius: 10px;
-                box-shadow: 0 0 5px 0 grey;
-                height: 20vh;
-            }
+                #photos-ligne1-droite {
+                    width: 66%;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
 
-            #image2 {
-                background-image: url(../images/galerie/plage-zanzibar.jpg);
-                background-size: cover;
-                width: 62%;
-                border-radius: 10px;
-                box-shadow: 0 0 5px 0 grey;
-                height: 20vh;
+                #photos-ligne2-gauche {
+                    width: 41%;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+
+                #photos-ligne2-milieu {
+                    width: 25%;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+
+                #photos-ligne2-droite {
+                    width: 34%;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+
+                .galeries-img {
+                    background-size: cover;
+                    background-position: top center;
+                    background-repeat: no-repeat;
+                    height: 300px;
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                    margin-bottom: 30px;
+
+                    .galeries-titre {
+                        position: relative;
+                        text-align: center;
+                        top: 20px;
+                        left: 30px;
+                        width: 50%;
+
+                        h4 {
+                            color: #fff;
+                            font-weight: bold;
+                            background-color: #0ce0f5;
+                            padding: 5px;
+                        }
+                    }
+                }
             }
         }
 
-        #row2 {
-            display: flex;
-            gap: 1.7rem;
-            justify-content: center;
-            height: 20vh;
-
-            #image1 {
-                background-image: url(../images/galerie/epices-zanzibar.jpg);
-                background-size: cover;
-                width: 35%;
-                border-radius: 10px;
-                box-shadow: 0 0 5px 0 grey;
-            }
-
-            #image2 {
-                background-image: url(../images/galerie/village-pecheur-zanzibar.jpg);
-                background-size: cover;
-                width: 20%;
-                border-radius: 10px;
-                box-shadow: 0 0 5px 0 grey;
-            }
-
-            #image3 {
-                background-image: url(../images/galerie/safari-blue.jpg);
-                background-size: cover;
-                width: 35%;
-                border-radius: 10px;
-                box-shadow: 0 0 5px 0 grey;
-            }
-        }
     }
 
-    // COMMENT
-    #comment {
-        padding: 50px;
-        gap: 1.7rem;
-        color: white;
+    // COMMENTS
+    .clients {
         background-image: linear-gradient(rgba(0, 242, 96, 0.4),
                 rgba(7, 117, 230, 0.3)),
             url(../images/the-paysage.jpg);
+        background-size: cover;
         background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
 
-        #mainComment {
-            display: flex;
-            gap: 20px;
-            padding-top: 20px;
-            text-align: left;
-            justify-content: center;
+        h2 {
+            color: #fff;
+        }
 
-            div {
-                width: 25%;
-                align-items: center;
+        h2:after {
+            background-color: #fff;
+        }
 
-                div {
-                    display: flex;
+        .container {
+            .temoignages {
+                display: flex;
+                padding: 0 15px;
 
-                    img {
-                        margin-right: 10px;
-                        margin-top: 10px;
-                        border-radius: 50%;
-                        width: 3rem;
+                .temoignages-clients {
+                    width: 33.3333%;
+                    padding: 0 15px;
+
+                    blockquote {
+                        padding: 5px;
+                        font-style: italic;
+                        line-height: 130%;
+                        color: #fff;
+
+                        cite {
+                            font-size: 90%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-top: 20px;
+
+                            img {
+                                height: 50px;
+                                border-radius: 50%;
+                                margin-right: 10px;
+                            }
+                        }
                     }
 
-                    span {
-                        font-style: italic;
+                    blockquote:before {
+                        content: "\201C";
+                        font-size: 800%;
+                        font-family: "Sanchez", serif;
+                        position: relative;
+                        top: 72px;
+                        left: -13px;
+                        color: rgba(255, 255, 255, 0.6);
                     }
                 }
             }
         }
     }
 
-    // PRICES
-    #prices {
-        padding: 50px;
-        gap: 1.7rem;
-
-        #slidePrices {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-
-            div {
-                padding: 10px;
-                padding-bottom: 50px;
-                width: 40%;
-                border-radius: 20px;
+    // SEJOURS
+    #sejour {
+        .container {
+            .sejours {
                 display: flex;
-                flex-direction: column;
-                box-shadow: 0 0 5px 0 grey;
-                text-align: left;
+                margin-right: -15px;
+                margin-left: -15px;
 
-                h3 {
-                    font-size: 25px;
-                    font-weight: 800;
-                }
+                .temoignages-clients {
+                    .sejour {
+                        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+                        border-radius: 10px;
+                        margin-bottom: 20px;
 
-                h4 {
-                    font-size: 30px;
-                }
+                        h3 {
+                            color: black;
+                            font-weight: 400;
+                        }
 
-                li {
-                    padding-left: 20px;
+                        h4 {
+                            font-size: 200%;
+                            font-weight: 100;
+                        }
 
-                    ul {
-                        i {
-                            // doesn't work !!
-                            margin-right: 20px;
+                        span {
+                            font-weight: 100;
+                            font-size: 40%;
+                            position: relative;
+                            top: -15px;
+                            left: 2px;
+                        }
+
+                        .sejour-title {
+                            padding: 10px 10px 0 10px;
+                            border-bottom: 1px solid #e3e0e0;
+                        }
+
+                        .sejour-content {
+                            ul {
+                                list-style: none;
+                                padding: 20px;
+                                font-weight: 300;
+                                line-height: 35px;
+
+                                li {
+                                    i {
+                                        font-size: 90%;
+                                        margin-right: 10px;
+                                      }
+                                }
+                            }
+                        }
+
+                        .sejour-signup {
+                            text-align: center;
+
+                            .btn-sejour {
+                                background-color: #04a8d1;
+                                color: #fff;
+                                margin-bottom: 20px;
+                              }
+                          }
+
+                          .sejour-signup:hover .btn-sejour {
+                            background-color: #05cdfe;
+                            color: #fff;
+                          }
+                    }
+
+                    .sejour-premium {
+                        background-color: #0ce0f5;
+                        color: #fff;
+
+                        .sejour-title-premium {
+                            font-size: 14px;
+                            text-align: center;
+                            font-weight: 400;
+                            position: absolute;
+                            top: 10px;
+                            right: 30px;
+                            background-color: #fff;
+                            color: green;
+                            border-radius: 10px;
+                            padding: 5px;
                         }
                     }
                 }
-
-                a {
-                    margin: auto;
-                    background-color: #148a9ced;
-                    border-radius: 12px;
-                    border: none;
-                    color: white;
-                    padding: 15px 32px;
-                    text-align: center;
-                    text-decoration: none;
-                    display: inline-block;
-                    font-size: 16px;
-                    width: 30%;
-                }
-            }
-
-            #cardBlue {
-                color: white;
-                background-color: aqua;
-
-                h3 {
-                    color: black;
-
-                }
             }
         }
     }
 
     // CONTACT
-    #contact {
-        display: flex;
-        padding: 50px;
-        justify-content: center;
+#contact {
+    .container {
+        .contact-infos {
+            display: flex;
+            margin-right: -15px;
+            margin-left: -15px;
 
-        #contactUs {
-            width: 50%;
-            text-align: left;
+            .contact-largeur{
+                .champs {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-bottom: 10px;
 
-            a {
-                text-decoration: none;
-                color: black;
+                    .contact-form {
+                        width: 100%;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+
+                        textarea {
+                            resize: none;
+                          }
+                    }
+
+                    .contact-form1 {
+                        display: flex;
+                        padding-left: 15px;
+                        margin-bottom: 30px;
+                      }
+
+                      .contact-form2 {
+                        padding-left: 15px;
+                        margin-bottom: 30px;
+                      }
+
+                    .adress {
+                        margin-left: 90px;
+                      }
+
+                      .contact-message {
+                        width: 100%;
+                        margin-top: 10px;
+                      }
+
+                      .btn-contact {
+                        background-color: #04a8d1;
+                        color: #fff;
+                        margin: 15px;
+                        border: none;
+                      }
+                  }
             }
 
-            label {
-                font-weight: 800;
-            }
-
-            input {
-                padding: 20px;
-            }
-
-            #buttonSend {
-                background-color: #148a9ced;
-                border-radius: 12px;
-                border: none;
-                color: white;
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                width: 30%;
-            }
-        }
-
-        #map {
-            iframe {
-                height: 400px;
-                width: 500px;
-                border: 0px;
-            }
-        }
-    }
-
-    // FOOTER
-    footer {
-        padding: 100px;
-        height: 2vh;
-        background-color: black;
-        color: white;
+            .carte {
+                width: 50%;
+                padding-right: 15px;
+                padding-left: 15px;
+              }
+          }
     }
 }
 
-/*********************** RESPONSIVE ******************************/
+// FOOTER
 
-@media screen and (max-width: 767px) {
-
-    // HEADER
-
-
-    // ABOUT
-    #about {
-        #content {
-            img {
-                width: 20%;
-                opacity: 50%;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1024px) {
-
-    // ABOUT
-    #about {
-        #content {
-            img {
-                width: 40%;
-            }
-        }
-    }
-
-    // OURISLAND
-    #ourIsland {
-        #slide {
-            flex-wrap: wrap;
-        }
-    }
-
-    // GALERIE
-    #galerie {
-        #row1 {
-            flex-wrap: wrap;
-        }
-
-        #row2 {
-            flex-wrap: wrap;
-        }
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-    // GLOBAL
-
-    // HEADER
-
-
-
-    // BANNER
-
-    // ABOUT
-    #about {
-        #content {
-            img {
-                width: 60%;
-                opacity: 60%;
-            }
-        }
-    }
-
-    // OURISLAND
-    #ourIsland {
-        #slide {
-            flex-wrap: wrap;
-        }
-    }
-
-    // GALERIE
-    // COMMENT
-    // PRICES
-    // CONTACT
-    #contact {
-        flex-wrap: wrap;
-    }
-
-}
-
-@media screen and (max-width: 1200px) {
-    // GLOBAL
-
-    // HEADER
-
-    .nav {
-        ul {
-            flex-direction: column;
-        }
-    }
-
-    // BANNER
-
-    // ABOUT
-    #about {
-        #content {
-            img {
-                width: 60%;
-            }
-        }
-    }
-
-    // OURISLAND
-    #ourIsland {
-        #slide {
-            flex-wrap: wrap;
-        }
-    }
-
-    // GALERIE
-    // COMMENT
-    // PRICES
-    // CONTACT
-    #contact {
-        flex-wrap: wrap;
-    }
-
+footer {
+    background-color: #000;
+    color: #fff;
+    height: 60px;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+  }
 }
