@@ -1,0 +1,526 @@
+/*
+Author : Sylvain Rotureau
+Date : 10/05/2022
+Version : 1
+*/
+@import url(../font/font.css);
+* {
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid black;
+}
+
+* h1 {
+  font-size: 3.2rem;
+}
+
+* h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 40px;
+  padding: 3%;
+  display: inline-block;
+  text-align: center;
+}
+
+* h2:after {
+  content: ' ';
+  display: block;
+  border-bottom: 4px solid aqua;
+  width: 40%;
+  margin: auto;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 100vw;
+  text-align: center;
+}
+
+body header {
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+body header a {
+  text-decoration: none;
+  color: white;
+}
+
+body header #logo {
+  font-family: 'warnesregular';
+  font-size: 2rem;
+}
+
+body header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header nav ul li {
+  list-style: none;
+  font-size: 20px;
+  margin: 15px;
+}
+
+body .banner {
+  position: relative;
+  text-align: left;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 242, 96, 0.4)), to(rgba(7, 117, 230, 0.3))), url(../images/header.jpg);
+  background-image: linear-gradient(rgba(0, 242, 96, 0.4), rgba(7, 117, 230, 0.3)), url(../images/header.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+body .banner h1 {
+  font-weight: bold;
+}
+
+body .banner #title {
+  position: absolute;
+  top: 20vh;
+  left: 20vh;
+}
+
+body .banner #title #subtitle {
+  font-size: 2.5em;
+  font-weight: lighter;
+  letter-spacing: .2rem;
+}
+
+body .banner a {
+  background-color: white;
+  border-radius: 12px;
+  border: none;
+  color: aqua;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+body .banner #buttonContactUs {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+body #about #content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #about #content #monkey {
+  min-width: 60%;
+}
+
+body #about #content #monkey img {
+  width: 100%;
+}
+
+body #about #content #rightSide .row {
+  text-align: left;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+body #about #content #rightSide .row .icon {
+  padding-right: 20px;
+}
+
+body #about #content #rightSide .row .icon i {
+  background-color: white;
+  border-radius: 50%;
+  color: red;
+  border: 2px solid red;
+  padding: 10px;
+}
+
+body #about #content #rightSide .row .text h3 {
+  padding: 0%;
+  text-align: left;
+  font-size: 1.8rem;
+}
+
+body #ourIsland {
+  padding: 50px;
+  background-color: aqua;
+}
+
+body #ourIsland #slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+body #ourIsland #slide .card {
+  width: 40%;
+  background-color: white;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 5px 0 grey;
+          box-shadow: 0 0 5px 0 grey;
+  padding-bottom: 50px;
+}
+
+body #ourIsland #slide .card img {
+  width: 70%;
+}
+
+body #ourIsland #slide .card h3 {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+body #ourIsland #slide .card p {
+  padding: 0 50px;
+  text-align: left;
+}
+
+body #galerie {
+  padding: 50px;
+}
+
+body #galerie #row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.7rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+body #galerie #row1 #image1 {
+  background-image: url(../images/galerie/femmes-zanzibar.jpg);
+  background-size: cover;
+  width: 30%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px 0 grey;
+          box-shadow: 0 0 5px 0 grey;
+  height: 20vh;
+}
+
+body #galerie #row1 #image2 {
+  background-image: url(../images/galerie/plage-zanzibar.jpg);
+  background-size: cover;
+  width: 62%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px 0 grey;
+          box-shadow: 0 0 5px 0 grey;
+  height: 20vh;
+}
+
+body #galerie #row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.7rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 20vh;
+}
+
+body #galerie #row2 #image1 {
+  background-image: url(../images/galerie/epices-zanzibar.jpg);
+  background-size: cover;
+  width: 35%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px 0 grey;
+          box-shadow: 0 0 5px 0 grey;
+}
+
+body #galerie #row2 #image2 {
+  background-image: url(../images/galerie/village-pecheur-zanzibar.jpg);
+  background-size: cover;
+  width: 20%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px 0 grey;
+          box-shadow: 0 0 5px 0 grey;
+}
+
+body #galerie #row2 #image3 {
+  background-image: url(../images/galerie/safari-blue.jpg);
+  background-size: cover;
+  width: 35%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px 0 grey;
+          box-shadow: 0 0 5px 0 grey;
+}
+
+body #comment {
+  padding: 50px;
+  gap: 1.7rem;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 242, 96, 0.4)), to(rgba(7, 117, 230, 0.3))), url(../images/the-paysage.jpg);
+  background-image: linear-gradient(rgba(0, 242, 96, 0.4), rgba(7, 117, 230, 0.3)), url(../images/the-paysage.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+body #comment #mainComment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+  text-align: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #comment #mainComment div {
+  width: 25%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #comment #mainComment div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #comment #mainComment div div img {
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 50%;
+  width: 3rem;
+}
+
+body #comment #mainComment div div span {
+  font-style: italic;
+}
+
+body #prices {
+  padding: 50px;
+  gap: 1.7rem;
+}
+
+body #prices #slidePrices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+body #prices #slidePrices div {
+  padding: 10px;
+  padding-bottom: 50px;
+  width: 40%;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 0 5px 0 grey;
+          box-shadow: 0 0 5px 0 grey;
+  text-align: left;
+}
+
+body #prices #slidePrices div h3 {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+body #prices #slidePrices div h4 {
+  font-size: 30px;
+}
+
+body #prices #slidePrices div li {
+  padding-left: 20px;
+}
+
+body #prices #slidePrices div li ul i {
+  margin-right: 20px;
+}
+
+body #prices #slidePrices div a {
+  margin: auto;
+  background-color: #148a9ced;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 30%;
+}
+
+body #prices #slidePrices #cardBlue {
+  color: white;
+  background-color: aqua;
+}
+
+body #prices #slidePrices #cardBlue h3 {
+  color: black;
+}
+
+body #contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #contact #contactUs {
+  width: 50%;
+  text-align: left;
+}
+
+body #contact #contactUs a {
+  text-decoration: none;
+  color: black;
+}
+
+body #contact #contactUs label {
+  font-weight: 800;
+}
+
+body #contact #contactUs input {
+  padding: 20px;
+}
+
+body #contact #contactUs #buttonSend {
+  background-color: #148a9ced;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 30%;
+}
+
+body #contact #map iframe {
+  height: 400px;
+  width: 500px;
+  border: 0px;
+}
+
+body footer {
+  padding: 100px;
+  height: 2vh;
+  background-color: black;
+  color: white;
+}
+
+/*********************** RESPONSIVE ******************************/
+@media screen and (max-width: 767px) {
+  #about #content img {
+    width: 20%;
+    opacity: 50%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #about #content img {
+    width: 40%;
+  }
+  #ourIsland #slide {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #galerie #row1 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #galerie #row2 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #about #content img {
+    width: 60%;
+    opacity: 60%;
+  }
+  #ourIsland #slide {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #contact {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about #content img {
+    width: 60%;
+  }
+  #ourIsland #slide {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #contact {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+/*# sourceMappingURL=style.css.map */

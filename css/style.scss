@@ -1,0 +1,563 @@
+/*
+Author : Sylvain Rotureau
+Date : 10/05/2022
+Version : 1
+*/
+
+
+// IMPORT
+@import url(../font/font.css);
+
+// GLOBAL
+* {
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid black;
+
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    h2 {
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+        padding: 3%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    h2:after {
+        content: ' ';
+        display: block;
+        border-bottom: 4px solid aqua;
+        width: 40%;
+        margin: auto;
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    text-align: center;
+
+    // HEADER
+    header {
+        z-index: 10;
+        display: flex;
+        background-color: black;
+        color: white;
+        align-items: center;
+        justify-content: space-around;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #logo {
+            font-family: 'warnesregular';
+            font-size: 2rem;
+        }
+
+        nav {
+            ul {
+                display: flex;
+
+                li {
+                    list-style: none;
+                    font-size: 20px;
+                    margin: 15px;
+                }
+            }
+        }
+    }
+
+    // BANNER
+    .banner {
+        position: relative;
+        text-align: left;
+        color: white;
+        background-image: linear-gradient(rgba(0, 242, 96, 0.4),
+                rgba(7, 117, 230, 0.3)),
+            url(../images/header.jpg);
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+
+        h1 {
+            font-weight: bold;
+        }
+
+        // div
+        #title {
+            position: absolute;
+            top: 20vh;
+            left: 20vh;
+
+            // span
+            #subtitle {
+                font-size: 2.5em;
+                font-weight: lighter;
+                letter-spacing: .2rem;
+            }
+        }
+
+        // buttons
+        a {
+            background-color: white;
+            border-radius: 12px;
+            border: none;
+            color: aqua;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        #buttonContactUs {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+    }
+
+    // ABOUT
+    #about {
+        #content {
+            display: flex;
+
+            // monkey
+            #monkey {
+                min-width: 60%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            // right side
+            #rightSide {
+                .row {
+                    text-align: left;
+                    padding-left: 20px;
+                    display: flex;
+                    padding-bottom: 20px;
+
+                    .icon {
+                        padding-right: 20px;
+
+                        i {
+                            background-color: white;
+                            border-radius: 50%;
+                            color: red;
+                            border: 2px solid red;
+                            padding: 10px;
+                        }
+                    }
+
+                    .text {
+                        h3 {
+                            padding: 0%;
+                            text-align: left;
+                            font-size: 1.8rem;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    // OURISLAND
+    #ourIsland {
+        padding: 50px;
+        background-color: aqua;
+
+        // main slide
+        #slide {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+
+            .card {
+                width: 40%;
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-shadow: 0 0 5px 0 grey;
+                padding-bottom: 50px;
+
+                img {
+
+                    width: 70%;
+                }
+
+                h3 {
+                    text-align: left;
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    padding: 0 50px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    // GALERIE
+    #galerie {
+        padding: 50px;
+
+        #row1 {
+            display: flex;
+            gap: 1.7rem;
+            justify-content: center;
+            margin-bottom: 20px;
+
+            #image1 {
+                background-image: url(../images/galerie/femmes-zanzibar.jpg);
+                background-size: cover;
+                width: 30%;
+                border-radius: 10px;
+                box-shadow: 0 0 5px 0 grey;
+                height: 20vh;
+            }
+
+            #image2 {
+                background-image: url(../images/galerie/plage-zanzibar.jpg);
+                background-size: cover;
+                width: 62%;
+                border-radius: 10px;
+                box-shadow: 0 0 5px 0 grey;
+                height: 20vh;
+            }
+        }
+
+        #row2 {
+            display: flex;
+            gap: 1.7rem;
+            justify-content: center;
+            height: 20vh;
+
+            #image1 {
+                background-image: url(../images/galerie/epices-zanzibar.jpg);
+                background-size: cover;
+                width: 35%;
+                border-radius: 10px;
+                box-shadow: 0 0 5px 0 grey;
+            }
+
+            #image2 {
+                background-image: url(../images/galerie/village-pecheur-zanzibar.jpg);
+                background-size: cover;
+                width: 20%;
+                border-radius: 10px;
+                box-shadow: 0 0 5px 0 grey;
+            }
+
+            #image3 {
+                background-image: url(../images/galerie/safari-blue.jpg);
+                background-size: cover;
+                width: 35%;
+                border-radius: 10px;
+                box-shadow: 0 0 5px 0 grey;
+            }
+        }
+    }
+
+    // COMMENT
+    #comment {
+        padding: 50px;
+        gap: 1.7rem;
+        color: white;
+        background-image: linear-gradient(rgba(0, 242, 96, 0.4),
+                rgba(7, 117, 230, 0.3)),
+            url(../images/the-paysage.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        #mainComment {
+            display: flex;
+            gap: 20px;
+            padding-top: 20px;
+            text-align: left;
+            justify-content: center;
+
+            div {
+                width: 25%;
+                align-items: center;
+
+                div {
+                    display: flex;
+
+                    img {
+                        margin-right: 10px;
+                        margin-top: 10px;
+                        border-radius: 50%;
+                        width: 3rem;
+                    }
+
+                    span {
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+
+    // PRICES
+    #prices {
+        padding: 50px;
+        gap: 1.7rem;
+
+        #slidePrices {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+
+            div {
+                padding: 10px;
+                padding-bottom: 50px;
+                width: 40%;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0 0 5px 0 grey;
+                text-align: left;
+
+                h3 {
+                    font-size: 25px;
+                    font-weight: 800;
+                }
+
+                h4 {
+                    font-size: 30px;
+                }
+
+                li {
+                    padding-left: 20px;
+
+                    ul {
+                        i {
+                            // doesn't work !!
+                            margin-right: 20px;
+                        }
+                    }
+                }
+
+                a {
+                    margin: auto;
+                    background-color: #148a9ced;
+                    border-radius: 12px;
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    width: 30%;
+                }
+            }
+
+            #cardBlue {
+                color: white;
+                background-color: aqua;
+
+                h3 {
+                    color: black;
+
+                }
+            }
+        }
+    }
+
+    // CONTACT
+    #contact {
+        display: flex;
+        padding: 50px;
+        justify-content: center;
+
+        #contactUs {
+            width: 50%;
+            text-align: left;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            label {
+                font-weight: 800;
+            }
+
+            input {
+                padding: 20px;
+            }
+
+            #buttonSend {
+                background-color: #148a9ced;
+                border-radius: 12px;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                width: 30%;
+            }
+        }
+
+        #map {
+            iframe {
+                height: 400px;
+                width: 500px;
+                border: 0px;
+            }
+        }
+    }
+
+    // FOOTER
+    footer {
+        padding: 100px;
+        height: 2vh;
+        background-color: black;
+        color: white;
+    }
+}
+
+/*********************** RESPONSIVE ******************************/
+
+@media screen and (max-width: 767px) {
+
+    // HEADER
+
+
+    // ABOUT
+    #about {
+        #content {
+            img {
+                width: 20%;
+                opacity: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    // ABOUT
+    #about {
+        #content {
+            img {
+                width: 40%;
+            }
+        }
+    }
+
+    // OURISLAND
+    #ourIsland {
+        #slide {
+            flex-wrap: wrap;
+        }
+    }
+
+    // GALERIE
+    #galerie {
+        #row1 {
+            flex-wrap: wrap;
+        }
+
+        #row2 {
+            flex-wrap: wrap;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    // GLOBAL
+
+    // HEADER
+
+
+
+    // BANNER
+
+    // ABOUT
+    #about {
+        #content {
+            img {
+                width: 60%;
+                opacity: 60%;
+            }
+        }
+    }
+
+    // OURISLAND
+    #ourIsland {
+        #slide {
+            flex-wrap: wrap;
+        }
+    }
+
+    // GALERIE
+    // COMMENT
+    // PRICES
+    // CONTACT
+    #contact {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    // GLOBAL
+
+    // HEADER
+
+    .nav {
+        ul {
+            flex-direction: column;
+        }
+    }
+
+    // BANNER
+
+    // ABOUT
+    #about {
+        #content {
+            img {
+                width: 60%;
+            }
+        }
+    }
+
+    // OURISLAND
+    #ourIsland {
+        #slide {
+            flex-wrap: wrap;
+        }
+    }
+
+    // GALERIE
+    // COMMENT
+    // PRICES
+    // CONTACT
+    #contact {
+        flex-wrap: wrap;
+    }
+
+}
