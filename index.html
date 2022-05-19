@@ -1,296 +1,449 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>zanzibar</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
-    <link rel="stylesheet" href="./css/ericmeyer.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>ZANZIBAR</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+    <link rel="stylesheet" href="font/font.css">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="css/reset-eric-mayer.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<!-- BODY -->
 
 <body>
-    <!-- HEADER -->
+
     <header>
-        <a id="logo" href="#">ZANZIBAR</a>
-        <nav>
+
+        <nav class="fixed-top">
+
+            <a id="zanzibar" href="/">Zanzibar</a>
+
             <ul>
-                <li><a href="#about">Qui sommes-nous</a></li>
-                <li><a href="#ourIsland">Notre île</a></li>
-                <li><a href="#galerie">Photos</a></li>
-                <li><a href="#prices">Nos séjours</a></li>
-                <li><a href="#comment">Témoignages</a></li>
-                <li><a href="#contactUs">Contact</a></li>
+                <li><a class="nav-item nav-link" href="#qui">Qui sommes-nous</a></li>
+                <li><a class="nav-item nav-link" href="#notreile">Notre île</a></li>
+                <li> <a class="nav-item nav-link" href="#photos">Photos</a></li>
+                <li><a class="nav-item nav-link" href="#temoignages">Témoignages</a></li>
+                <li><a class="nav-item nav-link" href="#sejour">Nos séjours</a></li>
+                <li><a class="nav-item nav-link" href="#contact">Contact</a></li>
             </ul>
+
         </nav>
+
+        <div class="container">
+
+            <div class="home-title">
+                <h1><span>Zanzibar</span>
+                    <br>un art de vivre
+                </h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+                <div>
+                    <a href="/" class="btn btn-full">Notre île</a>
+                    <a href="/" class="btn btn-ghost">Contactez-nous</a>
+                </div>
+            </div>
+
+        </div>
+
     </header>
 
-    <!-- SECTION BANNER -->
-    <section class="banner">
-        <div id="title">
-            <h1>ZANZIBAR</h1>
-            <span id="subtitle">UN ART DE VIVRE</span>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-            <a href="#ourIsland" id="buttonOurIsland">Notre Ile</a>
-            <a href="#contactUs" id="buttonContactUs">Contactez-nous</a>
-        </div>
-    </section>
 
-    <!-- SECTION ABOUT -->
-    <section id="about">
-        <h2>QUI SOMMES-NOUS</h2>
+    <!-- Qui sommes-nous
+        ========================================= -->
+    <section class="container">
 
-        <div id="content">
-            <div id="monkey">
-                <img src="./images/tea.png" alt="tea">
+        <h2>Qui sommes-nous</h2>
+
+        <div id="contenu-qui">
+
+            <div id="qui-singe">
+                <img src="images/singe.png" alt="singe colobe rouge zanzibar">
             </div>
 
-            <div id="rightSide">
-                <!-- Line 1 -->
-                <div class="row">
-                    <div class="icon"><i class="fa fa-check"></i></div>
-                    <div class="text">
-                        <h3>RELIGIONS ET CROYANCES</h3>
-                        <p>
-                            La religion principale à Zanzibar est l'islam (97 %), à dominante sunnite. Les hindouistes
+            <div id="qui-texts">
+
+                <!-- qui-texte 1 -->
+                <div class="qui-texts-plus">
+
+                    <div class="qui-text-icon-gauche">
+                        <div class="qui-texts-icon">
+                            <i class="far fa-check-circle"></i>
+                        </div>
+                    </div>
+
+                    <div class="qui-text-texts-droit">
+                        <h3>Religions et croyances</h3>
+                        <p>La religion principale à Zanzibar est l'islam (97 %), à dominante sunnite. Les hindouistes
                             constituent une toute petite communauté. Plusieurs minorités religieuses (musulmanes) ont
-                            élu
-                            domicile à Zanzibar : es ismaéliens (qui vénèrent Ismaël, l'un des descendants du prophète
-                            Ali,
-                            et dont le chef spirituel et temporel est le célèbre et richissime Aga Khan) et les dawoodis
-                            bohras, des Indo-Pakistanais, qui suivent les préceptes du Coran, mais dont la pratique
-                            religieuse, marginale, est beaucoup moins dogmatique.
-                        </p>
+                            élu domicile à Zanzibar : es ismaéliens (qui vénèrent Ismaël, l'un des descendants du
+                            prophète Ali, et dont le chef spirituel et temporel est le célèbre et richissime Aga Khan)
+                            et les dawoodis bohras, des Indo-Pakistanais, qui suivent les préceptes du Coran, mais dont
+                            la pratique religieuse, marginale, est beaucoup moins dogmatique.</p>
+                    </div>
+
+                </div>
+
+                <!-- qui-texte 2 -->
+                <div class="qui-texts-plus">
+
+                    <div class="qui-text-icon-gauche">
+                        <div class="qui-texts-icon">
+                            <i class="far fa-check-circle"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="qui-text-texts-droit">
+                        <h3>Musique</h3>
+                        <p> Le taarab (mot arabe signifiant « joie ») est la forme de musique la plus populaire à
+                            Zanzibar. C'est un ensemble pouvant compter jusqu'à une quarantaine de musiciens. Les
+                            chansons sont des « poèmes chantés » qui mélangent les influences africaines, arabes et
+                            indiennes. D'où son originalité.</p>
+
                     </div>
                 </div>
 
-                <!-- Line 2 -->
-                <div class="row">
-                    <div class="icon"><i class="fa fa-check"></i></div>
-                    <div class="text">
-                        <h3>MUSIQUE</h3>
-                        <p>Le taarab (mot arabe signifiant « joie ») est la forme de musique la plus populaire à
-                            Zanzibar.
-                            C'est un ensemble pouvant compter jusqu'à une quarantaine de musiciens. Les chansons sont
-                            des «
-                            poèmes chantés » qui mélangent les influences africaines, arabes et indiennes. D'où son
-                            originalité.
-                        </p>
+                <!-- qui-texte 3 -->
+                <div class="qui-texts-plus">
+
+                    <div class="qui-text-icon-gauche">
+                        <div class="qui-texts-icon">
+                            <i class="far fa-laugh"></i>
+                        </div>
+                    </div>
+
+                    <div class="qui-text-texts-droit">
+                        <h3>Mythe littéraire</h3>
+                        <p>Outre les épices, les ivoires et les esclaves, Zanzibar a exporté des rêves. Zanzibar ! Voilà
+                            un nom qui est une magnifique invitation au voyage à lui tout seul. Nombreux sont les
+                            écrivains européens (britanniques et français, notamment) qui ont succombé à son nom, rêvant
+                            de voir un jour cette île lointaine.</p>
+
                     </div>
                 </div>
 
-                <!-- Line 3 -->
-                <div class="row">
-                    <div class="icon"><i class="fa fa-laugh"></i></div>
-                    <div class="text">
-                        <h3>RELIGIONS ET CROYANCES</h3>
-                        <p>
-                            Outre les épices, les ivoires et les esclaves, Zanzibar a exporté des rêves. Zanzibar !
-                            Voilà un
-                            nom qui est une magnifique invitation au voyage à lui tout seul. Nombreux sont les écrivains
-                            européens (britanniques et français, notamment) qui ont succombé à son nom, rêvant de voir
-                            un
-                            jour cette île lointaine.
-                        </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Notre île
+    ========================================= -->
+    <section id="notre-ile">
+        <div class="container">
+            <h2>Notre île</h2>
+
+            <div class="notre-ile-lieux">
+
+                <div class="notre-ile-lieu">
+                    <div class="lieu-details">
+                        <img src="images/stone-town.png" alt="Stone town Zanzibar">
+                        <h4>Stone Town</h4>
+                        <p>Ville portuaire, baignée par l’océan Indien, dont le cœur ancien, appelé Stone Town (la ville
+                            de pierre) en anglais et Mji Mkongwe (la vieille ville) en kiswahili, constitue le joyau. Ce
+                            centre ancien est d’une telle richesse qu’il a été inscrit en 2000 au Patrimoine mondial de
+                            l’Unesco. </p>
+                    </div>
+                </div>
+
+                <div class="notre-ile-lieu">
+                    <div class="lieu-details">
+                        <img src="images/prison-island.png" alt="Prison Island Zanzibar">
+                        <h4>Prison Island</h4>
+                        <p>L’île de Changuu, en swahili, garde les traces de son passé. Elle fut le point de départ et
+                            la zone de transit de nombreux esclaves attendant leur affectation. Aujourd’hui, elle a été
+                            investie par de curieux habitants : les tortues géantes d’Aldabra, ilot des Seychelles</p>
+                    </div>
+                </div>
+
+                <div class="notre-ile-lieu">
+                    <div class="lieu-details">
+                        <img src="images/parc-national-jozani.png" alt="Parc national Jozani Zanzibar">
+                        <h4>Parc Jozani</h4>
+                        <p>Le parc national s’étend sur 50 kilomètres entre la baie de Chwaka et celle d’Uzi. Cette
+                            jungle marécageuse abrite toujours une vie sauvage riche et luxuriante, comprenant notamment
+                            deux espèces de singes particulièrement rares : les singes rouges et bleus.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- GALERIES PHOTOS
+    ========================================= -->
+
+    <section id="photos">
+        <div class="container">
+            <h2>Galerie photos</h2>
+
+            <div class="photos-lignes">
+
+                <div id="photos-ligne1-gauche">
+                    <div class="galeries-img" style="background-image: url(images/galerie/femmes-zanzibar.jpg)">
+                        <div class="galeries-titre">
+                            <h4>Les femmes de Zanzibar</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="photos-ligne1-droite">
+                    <div class="galeries-img" style="background-image: url(images/galerie/plage-zanzibar.jpg)">
+                        <div class="galeries-titre">
+                            <h4>La plage de Zanzibar</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="photos-lignes">
+
+                <div id="photos-ligne2-gauche">
+                    <div class="galeries-img" style="background-image: url(images/galerie/epices-zanzibar.jpg)">
+                        <div class="galeries-titre">
+                            <h4>Les épices de Zanzibar</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="photos-ligne2-milieu">
+                    <div class="galeries-img"
+                        style="background-image: url(images/galerie/village-pecheur-zanzibar.jpg)">
+                        <div class="galeries-titre">
+                            <h4>Village de pêcheur à Zanzibar</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="photos-ligne2-droite">
+                    <div class="galeries-img" style="background-image: url(images/galerie/safari-blue.jpg)">
+                        <div class="galeries-titre">
+                            <h4>Safari Blue</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TEMOIGNAGES CLIENTS
+    ========================================= -->
+    <section class="clients">
+
+        <div class="container">
+            <h2>Ils ont adoré</h2>
+
+            <div class="temoignages">
+
+                <div class="temoignages-clients">
+                    <blockquote>
+                        Séjour magnifique et prestations au delà de nos espérances Surtout quand on se retrouve
+                        surclassé alors que c'est déjà top.
+                        <cite><img src="images/clients/emilie2.jpg" alt="Témoignages Emilie sur Zanzibar">Emilie</cite>
+                    </blockquote>
+                </div>
+
+                <div class="temoignages-clients">
+                    <blockquote>
+                        Aventure riche en émotion de par la découverte d'une savane africaine authentique, la vie de
+                        sa faune, de très belles rencontres humaines avec notamment les enfants d'une école de
+                        masaïs sédentarisé.
+                        <cite><img src="images/clients/nathalie.jpg"
+                                alt="Témoignages Blaise sur Zanzibar">Nathalie</cite>
+                    </blockquote>
+                </div>
+
+                <div class="temoignages-clients">
+                    <blockquote>Pour le safari nous avons été accompagnés par un guide extraordinaire très
+                        attentionné et cultivé, qui s’est adapté à notre rythme et à nos envies.
+                        <cite><img src="images/clients/caroline.jpg"
+                                alt="Témoignages Julia sur Zanzibar">Caroline</cite>
+                    </blockquote>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- NOS SEJOURS
+    ========================================= -->
+
+    <section id="sejour">
+        <div class="container">
+            <h2>Nos séjours</h2>
+
+
+            <div class="sejours">
+
+                <!-- sejour1 -->
+                <div class="temoignages-clients">
+                    <div class="sejour">
+                        <div class="sejour-title">
+                            <h3>Idylle à Zanzibar</h3>
+                            <h4>10 jours | 7 nuits</h4>
+                            <p>A partir de 2350€</p>
+                        </div>
+                        <div class="sejour-content">
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i>Farniente sur les plages de Zanzibar</li>
+                                <li><i class="fas fa-check-circle"></i>Hébergement dans un hôtel de luxe</li>
+                                <li><i class="fas fa-check-circle"></i>Une atmosphère dans le plus pur style zanzibari
+                                    au cœur des jardins
+                                </li>
+                                <li><i class="fas fa-check-circle"></i>De petites attentions tout au long de votre
+                                    séjour</li>
+                            </ul>
+                        </div>
+                        <div class="sejour-signup">
+                            <a href="/" class="btn btn-sejour">Je m'inscris</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- sejour2-->
+                <div class="temoignages-clients">
+                    <div class="sejour sejour-premium">
+                        <div class="sejour-title">
+                            <h3>Tanzanie à l’infini</h3>
+                            <h4>13 jours | 10 nuits</h4>
+                            <p>A partir de 3440€</p>
+                        </div>
+                        <div class="sejour-content">
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i>Le spectacle magnifique de la migration dans le
+                                    Serengeti</li>
+                                <li><i class="fas fas fa-check-circle"></i>L’impressionnant cratère du Ngorongoro</li>
+                                <li><i class="fas fas fa-check-circle"></i>Les plages de Zanzibar</li>
+                                <li><i class="fas fa-check-circle"></i>La vieille ville de Stone Town et ses ruelles aux
+                                    milles couleurs</li>
+                            </ul>
+                        </div>
+                        <div class="sejour-signup">
+                            <a href="/" class="btn btn-sejour">Je m'inscris</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- sejour3 -->
+                <div class="temoignages-clients">
+                    <div class="sejour">
+                        <div class="sejour-title">
+                            <h3>Au bout de la Tanzanie</h3>
+                            <h4>12 jours | 9 nuits</h4>
+                            <p>A partir de 3600€</p>
+                        </div>
+                        <div class="sejour-content">
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i>La découverte de tous les principaux parcs du
+                                    pays</li>
+                                <li><i class="fas fa-check-circle"></i>L’impressionnant cratère du Ngorongoro</li>
+                                <li><i class="fas fa-check-circle"></i>Le spectacle magnifique de la migration dans le
+                                    Serengeti</li>
+                                <li><i class="fas fa-check-circle"></i>Les plages de Zanzibar</li>
+                            </ul>
+                        </div>
+                        <div class="sejour-signup">
+                            <a href="/" class="btn btn-sejour">Je m'inscris</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
+
     </section>
 
-    <!-- SECTION OURISLAND -->
-    <section id="ourIsland">
-        <h2>NOTRE ILE</h2>
-        <div id="slide">
-            <div class="card">
-                <img src="./images/stone-town.png" alt="" class="stone">
-                <h3>STONE TOWN</h3>
-                <p>Ville portuaire, baignée par l’océan Indien, dont le cœur ancien, appelé Stone Town (la ville de
-                    pierre) en anglais et Mji Mkongwe (la vieille ville) en kiswahili, constitue le joyau. Ce centre
-                    ancien est d’une telle richesse qu’il a été inscrit en 2000 au Patrimoine mondial de l’Unesco.
-                </p>
-            </div>
-            <div class="card">
-                <img src="./images/prison-island.png" alt="" class="stone">
-                <h3>PRISON ISLAND</h3>
-                <p>L’île de Changuu, en swahili, garde les traces de son passé. Elle fut le point de départ et la zone
-                    de transit de nombreux esclaves attendant leur affectation. Aujourd’hui, elle a été investie par de
-                    curieux habitants : les tortues géantes d’Aldabra, ilot des Seychelles.
-                </p>
-            </div>
-            <div class="card">
-                <img src="./images/parc-national-jozani.png" alt="" class="stone">
-                <h3>PARC JOZANI</h3>
-                <p>Le parc national s’étend sur 50 kilomètres entre la baie de Chwaka et celle d’Uzi. Cette jungle
-                    marécageuse abrite toujours une vie sauvage riche et luxuriante, comprenant notamment deux espèces
-                    de singes particulièrement rares : les singes rouges et bleus.
-                </p>
-            </div>
-        </div>
-    </section>
 
-    <!-- SECTION GALERIE -->
-    <section id="galerie">
-        <h2>GALERIE PHOTOS</h2>
-        <div id="row1">
-            <div id="image1"></div>
-            <div id="image2"></div>
-        </div>
-        <div id="row2">
-            <div id="image1"></div>
-            <div id="image2"></div>
-            <div id="image3"></div>
-        </div>
-    </section>
+    <!-- CONTACT
+    ========================================= -->
 
-    <!-- SECTION COMMENT -->
-    <section id="comment">
-        <h2>ILS ONT ADORE</h2>
-        <div id="mainComment">
-            <!-- Card 1 -->
-            <div>
-                <p>
-                    <i class="fa fa-quote-left"></i> Séjour magnifique et prestations au delà de nos espérances
-                    Surtout
-                    quand on se retrouve surclassé
-                    alors
-                    que c' 'est déjà top.
-                </p>
-                <div>
-                    <img src="./images/clients/emilie.jpg" alt="">
-                    <span>Emilie du Châtelet</span>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div>
-                <p>
-                    <i class="fa fa-quote-left"></i>
-                    Séjour magnifique et prestations au delà de nos espérances Surtout
-                    quand on se retrouve surclassé
-                    Aventure riche en émotion de par la découverte d'une savane africaine authentique, la vie de sa
-                    faune,
-                    de très belles rencontres humaines avec notamment les enfants d'une école de masaïs sédentarisé.
-                </p>
-                <div>
-                    <img src="./images/clients/blaise.jpg" alt="">
-                    <span>Blaise Pascal</span>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div>
-                <p>
-                    <i class="fa fa-quote-left"></i> Séjour magnifique et prestations au delà de nos espérances
-                    Surtout
-                    quand on se retrouve surclassé
-                    Pour le safari nous avons été accompagnés par un guide extraordinaire très attentionné et
-                    cultivé,
-                    qui
-                    s’est adapté à notre rythme et à nos envies.
-                </p>
-                <div>
-                    <img src="./images/clients/julia.jpg" alt="">
-                    <span>Julia Robinson</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION PRICES -->
-    <section id="prices">
-        <h2>NOS SEJOURS</h2>
-        <div id="slidePrices">
-            <div>
-                <h3>IDYLLE À ZANZIBAR</h3>
-                <h4>10 JOURS | 7 NUITS</h4>
-                <h5>A partir de 2350€</h5>
-                <hr>
-                <ul>
-                    <li><i class="fa fa-check-circle"></i>Farniente sur les plages de Zanzibar</li>
-                    <li><i class="fa fa-check-circle"></i>Hébergement dans un hôtel de luxe</li>
-                    <li><i class="fa fa-check-circle"></i>Une atmosphère dans le plus pur style zanzibari au cœur des
-                        jardins
-                    </li>
-                    <li><i class="fa fa-check-circle"></i>De petites attentions tout au long de votre séjour</li>
-                </ul>
-                <a href="#">Je m'inscris</a>
-            </div>
-            <div id="cardBlue">
-                <h3>TANZANIE À L’INFINI</h3>
-                <h4>13 JOURS | 10 NUITS</h4>
-                <h5>A partir de 3440€</h5>
-                <hr>
-                <ul>
-                    <li><i class="fa fa-check-circle"></i>Le spectacle magnifique de la migration dans le Serengeti</li>
-                    <li><i class="fa fa-check-circle"></i>L’impressionnant cratère du Ngorongoro</li>
-                    <li><i class="fa fa-check-circle"></i>Les plages de Zanzibar</li>
-                    <li><i class="fa fa-check-circle"></i>La vieille ville de Stone Town et ses ruelles aux milles
-                        couleurs
-                    </li>
-                </ul>
-                <a href="#">Je m'inscris</a>
-            </div>
-            <div>
-                <h3>AU BOUT DE LA TANZANIE</h3>
-                <h4>12 JOURS | 9 NUITS</h4>
-                <h5>A partir de 3600€</h5>
-                <hr>
-                <ul>
-                    <li><i class="fa fa-check-circle"></i>La découverte de tous les principaux parcs du pays</li>
-                    <li><i class="fa fa-check-circle"></i>L’impressionnant cratère du Ngorongoro</li>
-                    <li><i class="fa fa-check-circle"></i>Le spectacle magnifique de la migration dans le Serengeti</li>
-                    <li><i class="fa fa-check-circle"></i>Les plages de Zanzibar</li>
-                </ul>
-                <a href="#">Je m'inscris</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION CONTACTUS -->
     <section id="contact">
-        <div id="contactUs">
-            <h2>CONTACTEZ-NOUS</h2>
-            <div id="lorem">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                    massa.
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                </p>
+        <div class="container">
+
+            <div class="contact-infos">
+
+                <div class="contact-largeur">
+
+                    <h2>Contactez-nous</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                        mus.</p>
+
+                    <div class="champs">
+                        <div class="phone">
+                            <p><i class="fas fa-phone"></i> +255 777 360 982</p>
+                        </div>
+                        <div class="adress">
+                            <p><i class="fas fa-map-marker-alt"></i> Office du Tourisme Stone Town Zanzibar</p>
+                        </div>
+                    </div>
+
+                    <form>
+                        <!-- Nom et Email -->
+                        <div class="champs">
+
+                            <div class="contact-form1">
+                                <label>Nom :</label>
+                                <input type="text" id="name" />
+                            </div>
+
+
+                            <div class="contact-form2">
+                                <label>Email :</label>
+                                <input type="email" id="email" placeholder="Ajouter votre email" />
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="champs">
+                            <div class="contact-form">
+                                <label>Votre message :</label>
+                                <textarea id="message" rows="3" class="contact-message"></textarea>
+                            </div>
+                            <button class="btn btn-contact">Envoyer</button>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="carte">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15867.050773895106!2d39.184259769603344!3d-6.162527844814014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185cd059242fbd01%3A0x9a18e54b0e5a94d8!2sStone+Town%2C+Zanzibar%2C+Tanzanie!5e0!3m2!1sfr!2sfr!4v1559572366253!5m2!1sfr!2sfr"
+                        width="600" height="336" frameborder="0" style="border:0" allowfullscreen>
+                    </iframe>
+                </div>
             </div>
-            <div id="tel">
-                <a href="tel:255-777-360-982"><i class="fa fa-phone"></i>+255 777 360 982</a>
-                <a href="#"><i class="fa fa-map-marker-alt"></i>Office du Tourisme Stone Town Zanzibar</a>
-            </div>
-            <div id="name">
-                <label for="name">Nom</label>
-                <input type="text" id="inputName" name="name" size=20">
-                <label for="email">Email</label>
-                <input type="email" id="inputEmail" name="email" size="20">
-            </div>
-            <div id="message">
-                <label for="message">Votre message</label>
-                <input type="text" id="inputMessage" name="message" size="20">
-            </div>
-            <a href="#" id="buttonSend">Envoyer</a>
-        </div>
-        <div id="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15867.050135987154!2d39.18425977695022!3d-6.1625491786127995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185cd059242fbd01%3A0x9a18e54b0e5a94d8!2sStone%20Town%2C%20Zanzibar%2C%20Tanzanie!5e0!3m2!1sfr!2sfr!4v1652256800340!5m2!1sfr!2sfr"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
-        <p>
-            © Site Zanzibar exercice Arinfo - 2019.
-        </p>
+        <p>© Site Zanzibar exercice Arinfo - 2019.</p>
     </footer>
+
+
 </body>
+
 
 </html>
